@@ -47,7 +47,7 @@ change_to = direction
 # initial score
 score = 0
 # creating high score
-high_score = open("/home/akhil118/Desktop/git/Pygame/highscore", "r").read()
+high_score = open("/home/akhil118/Desktop/git/Snake-game/highscore", "r").read()
 
 
 # displaying Score function
@@ -78,7 +78,7 @@ def game_over():
     if score > int(high_score):
         high_score = score
 
-    data = open("/home/akhil118/Desktop/git/Pygame/highscore", "w")
+    data = open("/home/akhil118/Desktop/git/Snake-game/highscore", "w")
     data.write(str(high_score))
 
     # creating font object my_font
